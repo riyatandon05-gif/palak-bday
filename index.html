@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Shringarika 🎉</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #333;
+    }
+
+    .container {
+      background: #fff;
+      width: 90%;
+      max-width: 900px;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 { color: #ff5f7e; }
+
+    .open-btn {
+      background: #ff5f7e;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    /* Change envelope to look like a real envelope */
+    .envelope {
+      width: 320px;
+      height: 220px;
+      background: transparent;
+      border-radius: 12px;
+      position: relative;
+      cursor: pointer;
+      margin: 30px auto;
+      perspective: 1000px;
+      user-select: none;
+      outline: none;
+    }
+
+    .envelope:focus {
+      box-shadow: 0 0 0 4px rgba(255,95,126,0.18);
+    }
+
+    .envelope .back {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg,#ff6f8f,#ff4f6f);
+      border-radius: 12px;
+      position: absolute;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    /* flap that covers the top of the letter */
+    .envelope .flap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 56%;
+      background: linear-gradient(180deg,#ff8aa0,#ff6f8f);
+      border-radius: 12px 12px 0 0;
+      transform-origin: top center;
+      transform: rotateX(0deg);
+      transition: transform 0.6s cubic-bezier(.2,.8,.2,1);
+      z-index: 3;
+      box-shadow: inset 0 -6px 12px rgba(255,255,255,0.08);
+    }
+
+    .envelope .letter {
+      width: 92%;
+      height: 78%;
+      background: #fff;
+      position: absolute;
+      top: 12%;
+      left: 4%;
+      border-radius: 8px;
+      padding: 15px;
+      box-sizing: border-box;
+      transform-origin: top;
+      transform: translateY(6px) rotateX(90deg);
+      transition: transform 0.6s cubic-bezier(.2,.8,.2,1);
+      overflow-y: auto;
+      font-size: 14px;
+      z-index: 2;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+    }
+
+    .envelope.open .flap {
+      transform: rotateX(-180deg);
+    }
+
+    .envelope.open .letter {
+      transform: translateY(0) rotateX(0deg);
+    }
+
+    .gallery {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+      justify-content: center;
+    }
+
+    /* Adjust image styles for better visibility */
+    .gallery img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      filter: brightness(0.9);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Happy Birthday 🎂 Shringarika 💖</h1>
+    
+    
+   
+
+    <div class="envelope" role="button" tabindex="0" aria-pressed="false" aria-label="Open letter">
+      <div class="back"></div>
+      <div class="flap" aria-hidden="false"></div>
+      <div class="letter" aria-hidden="true">
+        <p>id="letter" aria-hidden="true">
+        <p>
+          Dear Shringarika 💖,<br><br>
+          Happy Birthday my constant, my person, my forever bestie ✨<br><br>
+          9th class se lekar aaj tak — hum saath hi chal rahe hain. School ke wo din, choti‑choti baatein, hasi, fights, patch‑ups… aur aaj hum college ke 2nd year tak pahunch gaye 🫶<br><br>
+          Time badla, jagah badli, log badle… par tu nahi badli. Tu hamesha meri strength rahi hai, meri safe place, meri sabse pyari aadat 💫<br><br>
+          Mujhe pata hai life easy nahi hoti, par jab tu saath hoti hai na, sab thoda aur aasaan lagta hai. Thank you har us moment ke liye jab tu mere saath thi — bina bole bhi 🥹💞<br><br>
+          Aaj ke din bas itna chahti hoon ki tera har sapna poora ho, teri smile hamesha aise hi rahe, aur humari dosti hamesha aise hi strong rahe — no matter what 🌸<br><br>
+          From 9th standard benches to college  — this journey is my favourite because it has YOU in it 💕<br><br>
+          With endless love,<br>
+          — Your forever bestie 💗
+        </p>
+      </div>
+    </div>
+
+    <button class="open-btn" id="openLetterBtn" aria-pressed="false" aria-controls="letter">Open Letter</button>
+    <h2>Our Memories 📸</h2>
+    <div class="gallery">
+      <img src="fgm.jpeg" alt="memory 1">
+      <img src="gfdx.jpeg" alt="memory 2">
+      <img src="lkjhc.jpeg" alt="memory 3">
+      <img src="WhatsApp Image 2026-02-03 at 5.31.08 PM.jpeg" alt="memory 4">
+    </div>
+
+    <footer>
+      Made with 💖 just for you
+    </footer>
+  </div>
+
+  <script>
+    (function() {
+      const envelope = document.querySelector('.envelope');
+      const letter = envelope.querySelector('.letter');
+      const flap = envelope.querySelector('.flap');
+
+      const btn = document.getElementById('openLetterBtn');
+
+      function setState(isOpen) {
+        envelope.classList.toggle('open', isOpen);
+        envelope.setAttribute('aria-pressed', isOpen);
+        letter.setAttribute('aria-hidden', !isOpen);
+        flap.setAttribute('aria-hidden', isOpen);
+        if (btn) {
+          btn.setAttribute('aria-pressed', isOpen);
+          btn.textContent = isOpen ? 'Close Letter' : 'Open Letter';
+        }
+      }
+
+      function toggleEnvelope() {
+        const isOpen = !envelope.classList.contains('open');
+        setState(isOpen);
+      }
+
+      envelope.addEventListener('click', toggleEnvelope);
+      envelope.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggleEnvelope();
+        }
+      });
+
+      if (btn) {
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          toggleEnvelope();
+        });
+        btn.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            toggleEnvelope();
+          }
+        });
+      }
+      // Ensure initial closed state
+      setState(false);
+    })();
+  </script>
+</body>
+</html>
